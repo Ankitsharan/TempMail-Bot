@@ -20,7 +20,7 @@ while True:
         @bot.message_handler(commands=['start'])
         def start_message(message):
             bot.send_message(message.chat.id,
-                             'Hey User., Welcome to MysteryMail Bot \nUsage:_\nTo Generate emails by clicking on the button "Generate email"\nTo refresh your inbox click on the button "Refresh inbox". After a new letter arrives, you will see a button with a subject line, click on this button to read the message. \n\n Dev : @jettastic\n Channel : @jetbots',
+                             'Hey User., Welcome to MysteryMail Bot \nUsage:_\nTo Generate emails by clicking on the button "Generate email"\nTo refresh your inbox click on the button "Refresh inbox". After a new letter arrives, you will see a button with a subject line, click on this button to read the message. \n\n Dev : @ved_karan\n Channel : @ved_karan',
                              reply_markup=keyboard)
 
 
@@ -38,7 +38,7 @@ while True:
                 bot.send_message(message.chat.id, 'First, generate an email', reply_markup=keyboard)
             elif message.text.lower() == 'about':
                 bot.send_message(message.chat.id,
-                                 'What is Mystery Mail?\n- it is a free email service that allows to receive email at a temporary address that self-destructed after a certain time elapses. It is also known by names like tempmail, 10minutemail, 10minmail, throwaway email, fake-mail , fake email generator, burner mail or trash-mail\n\nHow Mystery Mail Become Safer You?\n- Using the temporary mail allows you to completely protect your real mailbox against the loss of personal information. Your temporary e-mail address is completely anonymous. Your details: information about your person and users with whom you communicate, IP-address, e-mail address are protected and completely confidential.\n\n➪ Bot Name : MysteryMail\n➪ Author : @jettastic\n➪ Channel : @jetbots\n➪ Language : Python \n➪ Donate : https://t.me/jettastic')
+                                 'What is Mystery Mail?\n- it is a free email service that allows to receive email at a temporary address that self-destructed after a certain time elapses. It is also known by names like tempmail, 10minutemail, 10minmail, throwaway email, fake-mail , fake email generator, burner mail or trash-mail\n\nHow Mystery Mail Become Safer You?\n- Using the temporary mail allows you to completely protect your real mailbox against the loss of personal information. Your temporary e-mail address is completely anonymous. Your details: information about your person and users with whom you communicate, IP-address, e-mail address are protected and completely confidential.\n\n➪ Bot Name : MysteryMail\n➪ Author : @ved_karan\n➪ Channel : @ved_karan\n➪ Language : Python \n➪ Donate : https://t.me/ved_karan')
             elif message.text.lower()[14] == "[":
                 email = message.text.lower()[15:message.text.lower().find("]")]
                 bkeyboard = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -64,7 +64,7 @@ while True:
                                              reply_markup=bkeyboard)
                             count = i + 1
                         bot.send_message(message.chat.id, "Here " + str(
-                            count) + " message we're found\nClick on the below button to read the message\n\n Further Queries @jettastic")
+                            count) + " message we're found\nClick on the below button to read the message\n\n Further Queries @ved_karan")
                     else:
                         bot.send_message(message.chat.id, 'Nothing found', reply_markup=bkeyboard)
                 except BaseException:
